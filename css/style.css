@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "TT Lakes Thin";
+  src: url("../fonts/TTLakes-Thin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes Regular";
+  src: url("../fonts/TTLakes-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes Medium";
+  src: url("../fonts/TTLakes-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url("../fonts/TTLakes-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "TT Lakes Regular";
+}
+
+.aside {
+  width: 320px;
+  height: 100vh;
+  padding: 0 24px;
+  background-color: #ffffff;
+}
+.aside__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 23px;
+}
+.aside__header .button {
+  cursor: pointer;
+}
+.aside__header .button div {
+  min-width: 40px;
+  min-height: 40px;
+}
+.aside__header .button__burger {
+  background: url("../files/burger.png");
+}
+.aside__header .button__search {
+  background: url("../files/search.png");
+}
+.aside__nav {
+  margin-top: 50px;
+}
+.aside__option {
+  color: #1b1c21;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.aside .footer {
+  margin-top: 268px;
+}
+.aside .footer .button div {
+  min-width: 40px;
+  min-height: 40px;
+}
+.aside .footer .button__call {
+  background: url("../files/call.png");
+}
+.aside .footer .button__chat {
+  background: url("../files/chat.png");
+}
+.aside .footer .button__profile {
+  background: url("../files/profile.png");
+}
+.aside .footer__mail {
+  color: #1b1c21;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+}
+.aside .footer__number {
+  color: #1b1c21;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.6px;
+}/*# sourceMappingURL=style.css.map */

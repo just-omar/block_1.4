@@ -10,12 +10,79 @@
 }
 
 body {
-  background-color: $main-bg-color;
-  font-family: "TT Lakes Medium";
-  min-width: 320px;
-  overflow-x: hidden;
+  font-family: "TT Lakes Regular";
 }
 
-.container {
-  padding: 0 16px;
+.aside {
+  width: 320px;
+  height: 100vh;
+  padding: 0 24px;
+  // border: 1px solid black;
+  background-color: $white-color;
+
+  &__header {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    // border: 1px solid black;
+    margin-top: 23px;
+    .button {
+      // border: none;
+      cursor: pointer;
+      div {
+        min-width: 40px;
+        min-height: 40px;
+      }
+      &__burger {
+        background: url("../files/burger.png");
+      }
+      &__search {
+        background: url("../files/search.png");
+      }
+    }
+  }
+
+  &__nav {
+    margin-top: 50px;
+  }
+
+  &__option {
+    color: #1b1c21;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 32px;
+  }
+  .footer {
+    margin-top: 268px;
+    .button {
+      div {
+        min-width: 40px;
+        min-height: 40px;
+      }
+      &__call {
+        background: url("../files/call.png");
+      }
+      &__chat {
+        background: url("../files/chat.png");
+      }
+      &__profile {
+        background: url("../files/profile.png");
+      }
+    }
+    &__mail {
+      color: #1b1c21;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px; /* 150% */
+      letter-spacing: -0.2px;
+    }
+    &__number {
+      color: #1b1c21;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px; /* 133.333% */
+      letter-spacing: -0.6px;
+    }
+  }
 }

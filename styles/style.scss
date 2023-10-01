@@ -14,10 +14,15 @@ body {
 }
 
 .aside {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 320px;
-  height: 100vh;
+  height: 100%;
   padding: 0 24px;
-  // border: 1px solid black;
+  padding-top: 23px;
+  box-shadow: 16px 0px 52px 10px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   background-color: $white-color;
 
   &__header {
@@ -25,10 +30,9 @@ body {
     align-items: center;
 
     justify-content: space-between;
-    // border: 1px solid black;
-    margin-top: 23px;
+
     .button {
-      // border: none;
+      border: none;
       cursor: pointer;
       div {
         min-width: 40px;
@@ -45,6 +49,10 @@ body {
 
   &__nav {
     margin-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 32px;
   }
 
   &__option {
@@ -52,10 +60,38 @@ body {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 32px;
+    border: none;
+    background-color: $white-color;
   }
   .footer {
     margin-top: 268px;
+    font-family: "TT Lakes Medium";
+    &__top {
+      display: flex;
+      gap: 16px;
+    }
+
+    .bottom {
+      display: flex;
+      gap: 7px;
+      button {
+        border: none;
+        color: #1b1c21;
+        background-color: white;
+        // background-color: yellowgreen;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.2px;
+        &.bottom__ru {
+          color: #7e7e82;
+        }
+      }
+    }
+
     .button {
+      border: none;
       div {
         min-width: 40px;
         min-height: 40px;
@@ -76,6 +112,8 @@ body {
       font-weight: 500;
       line-height: 24px; /* 150% */
       letter-spacing: -0.2px;
+      margin-top: 16px;
+      margin-bottom: 12px;
     }
     &__number {
       color: #1b1c21;
@@ -83,6 +121,8 @@ body {
       font-weight: 700;
       line-height: 32px; /* 133.333% */
       letter-spacing: -0.6px;
+
+      margin-bottom: 40px;
     }
   }
 }

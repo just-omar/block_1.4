@@ -34,6 +34,14 @@ body {
   font-family: "TT Lakes Regular";
 }
 
+button {
+  cursor: pointer;
+}
+button :active {
+  transition: transform 500ms;
+  transform: scale(1.2, 1.2);
+}
+
 .aside {
   position: fixed;
   top: 0;
@@ -78,10 +86,10 @@ body {
   border: none;
   background-color: #ffffff;
   position: relative;
-  transition: filter 500ms;
+  transition: opacity 500ms ease-in;
 }
 .aside__option:hover {
-  filter: opacity(50%);
+  opacity: 0.5;
 }
 .aside__option:hover::before {
   content: "";

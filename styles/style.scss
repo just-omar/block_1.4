@@ -11,10 +11,11 @@
 
 body {
   font-family: "TT Lakes Regular";
+  // height: 100%;
 }
 
 .aside {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 320px;
@@ -62,6 +63,9 @@ body {
     margin-bottom: 32px;
     border: none;
     background-color: $white-color;
+    &:hover {
+      filter: opacity(50%);
+    }
   }
   .footer {
     margin-top: 268px;

@@ -35,7 +35,7 @@ body {
 }
 
 .aside {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 320px;
@@ -78,6 +78,9 @@ body {
   margin-bottom: 32px;
   border: none;
   background-color: #ffffff;
+}
+.aside__option:hover {
+  filter: opacity(50%);
 }
 .aside .footer {
   margin-top: 268px;

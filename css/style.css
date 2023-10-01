@@ -77,9 +77,20 @@ body {
   font-weight: 600;
   border: none;
   background-color: #ffffff;
+  position: relative;
+  transition: filter 500ms;
 }
 .aside__option:hover {
   filter: opacity(50%);
+}
+.aside__option:hover::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -25px;
+  background: url("../files/highlight.png");
+  width: 4px;
+  height: 32px;
 }
 .aside .footer {
   margin-top: 268px;
@@ -102,9 +113,10 @@ body {
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: -0.2px;
+  transition: filter 500ms;
 }
-.aside .footer .bottom button.bottom__ru {
-  color: #7e7e82;
+.aside .footer .bottom button:hover {
+  filter: opacity(50%);
 }
 .aside .footer .button {
   border: none;

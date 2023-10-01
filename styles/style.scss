@@ -62,8 +62,19 @@ body {
     font-weight: 600;
     border: none;
     background-color: $white-color;
+    position: relative;
+    transition: filter 500ms;
     &:hover {
       filter: opacity(50%);
+      &::before {
+        content: "";
+        position: absolute;
+        top: -8px;
+        left: -25px;
+        background: url("../files/highlight.png");
+        width: 4px;
+        height: 32px;
+      }
     }
   }
   .footer {
@@ -87,9 +98,13 @@ body {
         font-weight: 500;
         line-height: 24px; /* 150% */
         letter-spacing: -0.2px;
-        &.bottom__ru {
-          color: #7e7e82;
+        transition: filter 500ms;
+        &:hover {
+          filter: opacity(50%);
         }
+        // &.bottom__ru {
+        //   color: #7e7e82;
+        // }
       }
     }
 

@@ -145,6 +145,7 @@ button :active {
   background: url("../files/profile.svg");
 }
 .aside .footer__mail {
+  display: inline-block;
   color: #1b1c21;
   font-size: 16px;
   font-weight: 500;
@@ -155,6 +156,7 @@ button :active {
   text-decoration: none;
 }
 .aside .footer__number {
+  display: inline-block;
   color: #1b1c21;
   font-size: 24px;
   font-weight: 700;

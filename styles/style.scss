@@ -139,6 +139,7 @@ button {
       }
     }
     &__mail {
+      display: inline-block;
       color: #1b1c21;
       font-size: 16px;
       font-weight: 500;
@@ -149,12 +150,12 @@ button {
       text-decoration: none;
     }
     &__number {
+      display: inline-block;
       color: #1b1c21;
       font-size: 24px;
       font-weight: 700;
       line-height: 32px; /* 133.333% */
       letter-spacing: -0.6px;
-
       margin-bottom: 40px;
       text-decoration: none;
     }

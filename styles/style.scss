@@ -20,6 +20,7 @@ button {
     transition: transform 500ms;
     transform: scale(1.2, 1.2);
   }
+  background-color: $white-color;
 }
 
 .aside {
@@ -48,10 +49,11 @@ button {
         min-height: 40px;
       }
       &__burger {
-        background: url("../files/burger.png");
+        background: url("../files/burger.svg");
+        background-color: $white-color;
       }
       &__search {
-        background: url("../files/search.png");
+        background: url("../files/search.svg");
       }
     }
   }
@@ -127,13 +129,13 @@ button {
         min-height: 40px;
       }
       &__call {
-        background: url("../files/call.png");
+        background: url("../files/call.svg");
       }
       &__chat {
-        background: url("../files/chat.png");
+        background: url("../files/chat.svg");
       }
       &__profile {
-        background: url("../files/profile.png");
+        background: url("../files/profile.svg");
       }
     }
     &__mail {

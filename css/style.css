@@ -36,6 +36,7 @@ body {
 
 button {
   cursor: pointer;
+  background-color: #ffffff;
 }
 button :active {
   transition: transform 500ms;
@@ -67,10 +68,11 @@ button :active {
   min-height: 40px;
 }
 .aside__header .button__burger {
-  background: url("../files/burger.png");
+  background: url("../files/burger.svg");
+  background-color: #ffffff;
 }
 .aside__header .button__search {
-  background: url("../files/search.png");
+  background: url("../files/search.svg");
 }
 .aside__nav {
   margin-top: 50px;
@@ -134,13 +136,13 @@ button :active {
   min-height: 40px;
 }
 .aside .footer .button__call {
-  background: url("../files/call.png");
+  background: url("../files/call.svg");
 }
 .aside .footer .button__chat {
-  background: url("../files/chat.png");
+  background: url("../files/chat.svg");
 }
 .aside .footer .button__profile {
-  background: url("../files/profile.png");
+  background: url("../files/profile.svg");
 }
 .aside .footer__mail {
   color: #1b1c21;
